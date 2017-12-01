@@ -13,7 +13,9 @@
 /*: question1
  ### 1. Create a function named `frozen` which takes no arguments. When this function is called, it prints "Let it go!".
  */
-// write your code here
+func frozen(){
+    print("Let it go!")
+}
 
 
 
@@ -25,7 +27,10 @@
 /*: question2
  ### 2. Write a function named `frozenAgain` that takes no arguments. Declare a constant in the body of the function, and assign it the value "Let it go!". Then print it to the console.
  */
-// write your code here
+func frozenAgain(){
+    let message: String = "Let it go!"
+    print(message)
+}
 
 
 
@@ -36,7 +41,10 @@
 /*: question3
  ### 3. Write a function that takes in a character's name as an argument (it can be any character from anything). What should the type of that argument be? Print the message "My favorite character is <character name>." to the screen.
  */
-// write your code here
+func myFavoriteCharacter(characterName: String){
+    print("My favorite character is \(characterName).")
+}
+myFavoriteCharacter(characterName: "Mickey")
 
 
 
@@ -47,7 +55,14 @@
 /*: question4
  ### 4. Call the function you wrote in Question 3 using a constant you define. Then call it using a variable. Change the value of the variable, and call it again. What do you see in the console?
  */
-// write your code here
+let oneCharacter = "Donald Duck"
+myFavoriteCharacter(characterName: oneCharacter)
+
+var otherCharacter = "Doofy"
+myFavoriteCharacter(characterName: oneCharacter)
+
+otherCharacter = "Duck Tales"
+myFavoriteCharacter(characterName: otherCharacter)
 
 
 
